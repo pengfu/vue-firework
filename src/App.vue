@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+  import firework from './components/firework'
 
 export default {
   name: 'app',
+  created(){
+      firework.show()
+  },
   components: {
-    HelloWorld
+
   }
 }
 </script>
